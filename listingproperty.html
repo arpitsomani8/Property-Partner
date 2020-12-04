@@ -99,12 +99,158 @@
                     <li><a href="#">Property details</a></li>
                 </ul>
             </div>
-            <div class="booking">
-                <legend class="signup-legend">Bookings Received</legend>
-        
-                <hr />
-                <legend class="signup-legend">Previous Bookings</legend>
+            <div class="bprofile">
+                <div class="info">
+                    <legend class="signup-legend">Property details</legend>
+                    <hr />
+                    <form class="form-horizontal" action="" method="POST" id="myform">
+                        <fieldset id="persional_information" class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">First Name:</label>
+                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Last Name:</label>
+                                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Apartment Type:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name" onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option value="">----------</option>
+                                        <option  value="">Apartment</option>
+                                        <option  value="">PG/Hostel</option>
+                                        <option value="">Independent House/Villa</option>
+                                        <option  value="">Gated Community Villa</option>
+                                       
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Floor:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option  value="">----------</option>
+                                        <option  value="">1</option>
+                                        <option value="">2</option>
+                                        <option  value="">3</option>
+                                        <option value="">4</option>
+                                       
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Status:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option  value="">----------</option>
+                                        <option value="">Not Available</option>
+                                        <option  value="">Available Now</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Total Floor:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option  value="">----------</option>
+                                        <option  value="">1</option>
+                                        <option value="">2</option>
+                                        <option Value="">3</option>
+                                        <option  value="">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Property Size:</label>
+                                    <i class="fa fa-ruler-combined" aria-hidden="true"></i>
+                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="0"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Facing:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option  value="">----------</option>
+                                        <option value="">North</option>
+                                        <option  value="">South</option>
+                                        <option  value="">East</option>
+                                        <option  value="">West</option>
+                                        <option  value="">North-East</option>
+                                        <option  value="">North-West</option>
+                                        <option  value="">South-East</option>
+                                        <option  value="">South-West</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">BHK Type:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option  value="">----------</option>
+                                        <option value="">1 RK</option>
+                                        <option  value="">1 BHK</option>
+                                        <option  value="">2 BHK</option>
+                                        <option  value="">3 BHK</option>
+                                        <option value="">4 BHK</option>
+                                    
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Property Age:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option value="">----------</option>
+                                        <option  value="">Under Construction</option>
+                                        <option  value="">Less Than A Year</option>
+                                        <option  value="">1-3 years</option>
+                                        <option  value="">3-5 Years</option>
+                                        <option  value="">5-10 Years</option>
+                                        <option  value="">More Than 10 Years</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Furnished Type:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option  value="">----------</option>
+                                        <option  value="">None</option>
+                                        <option  value="">Semi</option>
+                                        <option  value="">Fully</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Address Line 1</label>
+                                <input type="email" class="form-control" name="email" id="email"  required />
+                            </div>
+                            <div class="form-group">
+                                <label for="">Address Line 2</label>
+                                <input type="text" class="form-control" name="phno" id="phno"  required />
+                            </div>
+                            
+                            <div>
+                                <button class="submit-btn btn btn-success" id="signupbtn" data-toogle="modal">
+                                   Save & Continue
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
+            
         </div>
         <!-------------------rigghhttside for Property section end--------------- -->
         <!-------------rigghhttside for Locality section----------------------- -->
