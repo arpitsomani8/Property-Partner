@@ -313,6 +313,14 @@
                                     
                                 </div>
                             </div>
+                            <div>
+                                <button class="submit-btn btn btn-primary" id="signupbtn" data-toogle="modal">
+                                    Back
+                                </button>
+                                <button class="submit-btn btn btn-success" id="signupbtn" data-toogle="modal">
+                                    Save & Continue
+                                </button>
+                            </div>
                         </fieldset>
                     </form>
 
@@ -329,12 +337,132 @@
                     <li><a href="#">Rental Details</a></li>
                 </ul>
             </div>
-            <div class="booking">
-                <legend class="signup-legend">Bookings Received</legend>
-        
-                <hr />
-                <legend class="signup-legend">Previous Bookings</legend>
+            <div class="bprofile">
+                <div class="info">
+                    <legend class="signup-legend">Provide Rental Details About your Property.</legend>
+                    <hr />
+                    <form class="form-horizontal" action="" method="POST" id="myform">
+                        <fieldset id="persional_information" class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> Property available with Rental Agreement *</label><br>
+                                    <label for="inputEmail4">Expected Rent:</label>
+                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="0.00"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Security Deposit:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option value="">No Security Deposit</option>
+                                        <option value="">1 Month</option>
+                                        <option value="">2 Month</option>
+                                        <option value="">3 Month</option>
+                                        <option value="">4 Month</option>
+                                    
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1">Negotiation*</label><br>
+                                    <label for="inputEmail4">Available From:</label>
+                                    <input type="date" class="form-control" name="fname" id="fname" placeholder="Street/Area"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Furnishing:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option  value="">----------</option>
+                                        <option  value="">None</option>
+                                        <option  value="">Semi</option>
+                                        <option  value="">Fully</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Total No Of Beds:</label>
+                                    <input type="number" class="form-control" name="fname" id="fname" 
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Preferred Tenants:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option value="">Dosen'nt Matter</option>
+                                        <option value="">Family</option>
+                                        <option value="">Bachelors</option>
+                                        <option value="">Company</option>
+                                        <option value="">Couple Friendly</option>
+                                    
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Max Bed In Room:</label>
+                                    <input type="number" class="form-control" name="fname" id="fname" 
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Parking:</label>
+                                    <select name="" id="" class="form-control" style="padding: 5px;" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required>
+                                        <option value="">None</option>
+                                        <option value="">Bike</option>
+                                        <option value="">Car</option>
+                                        <option value="">Bike And Car</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">is_meals_included:</label>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="inputEmail4">owner_stays:</label>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">smoking_drinking_allowed:</label>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">visitor_allowed:</label>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">electricity_included:</label>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">non_veg_allowed:</label>
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Property Description</label>
+                                        <input type="textarea" id="vehicle1" name="vehicle1">
+                                    </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
+            
         </div>
         <!-------------------rigghhttside for Rental Details section end--------------- -->
         <!-------------rigghhttside for Gallery section----------------------- -->
@@ -380,11 +508,52 @@
                     <li><a href="#">Schedule</a></li>
                 </ul>
             </div>
-            <div class="booking">
-                <legend class="signup-legend">Bookings Received</legend>
-        
-                <hr />
-                <legend class="signup-legend">Previous Bookings</legend>
+            <div class="bprofile">
+                <div class="info">
+                    <legend class="signup-legend">Make house visits hassle-free by providing us your availability</legend>
+                    <hr />
+                    <form class="form-horizontal" action="" method="POST" id="myform">
+                        <fieldset id="persional_information" class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">First Name:</label>
+                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Last Name:</label>
+                                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">First Name:</label>
+                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Last Name:</label>
+                                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">First Name:</label>
+                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Last Name:</label>
+                                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name"
+                                        onkeypress="return /[a-z]/i.test(event.key)" required />
+                                </div>
+                            </div>
+                           
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
         <!-------------------rigghhttside for Schedule section end--------------- -->
