@@ -185,7 +185,13 @@ body {
 .fa-credit-card,
 .fa-user-circle,
 .fa-file-import,
-.fa-th-list {
+.fa-th-list,
+.fa-home,
+.fa-map-marker-alt,
+.fa-city,
+.fa-images,
+.fa-tv,
+.fa-calendar-alt {
   color: #2ecab6;
   margin-right: 15px;
 }
