@@ -323,6 +323,11 @@ input[type="email"] {
 .yellowText {
   background-color: yellow;
 }
+/*----------------------------check box-----------------*/
+#myCheck:checked + #area {
+  display: inline !important;
+  margin-left: 10px;
+}
 
 /*--------------------------------right side end------------------------------------------------*/
 footer {
