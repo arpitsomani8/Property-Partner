@@ -233,7 +233,24 @@ body {
   margin-right: 15px;
 }
 .fa-handshake,
-.fa-hand-holding-heart {
+.fa-hand-holding-heart,
+.fa-parking,
+.fa-car-battery,
+.fa-person-booth,
+.fa-trash-alt,
+.fa-check-circle,
+.fa-tree,
+.fa-burn,
+.fa-store,
+.fa-check-circle,
+.fa-fire-extinguisher,
+.fa-slideshare,
+.fa-swimming-pool,
+.fa-intercom,
+.fa-glass-cheers,
+.fa-snowflake,
+.fa-wifi,
+.fa-arrows-alt-v {
   color: #2ecab6;
 }
 .fa-whatsapp,
