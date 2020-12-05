@@ -26,34 +26,66 @@
       rel="stylesheet"
     />
     <link href="ownermyaccount.css" rel="stylesheet" />
+    <style type="text/css">
+      @media (max-width: 576px) {
+        .ft {
+          font-size: 16px;
+        }
+
+        .c img {
+          height: 250px !important;
+        }
+
+        .fa-user-circle {
+          color: #2ecab6 !important;
+        }
+
+        .dropdown button {
+          background-color: #fff !important;
+          color: #2ecab6 !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="header">
       <nav class="navbar navbar-light fixed-top" style="background-color: #fff">
         <div>
-          <a class="navbar-brand pl-4 py-0" href="#"
+          <a
+            class="pl-0 mr-2"
+            href="index.html"
+            style="padding-top: -10px !important"
+            ><i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i
+          ></a>
+          <a class="navbar-brand pl-0 py-0" href="#"
             ><b>SHELTOWN.in</b>
             <p>Live Like You Own It</p>
           </a>
         </div>
-        <div class="menu">
-          <ul class="">
-            <li class="nav-item mr-4">
-              <p class="nav-link pt-3" href="#">Adarsh Kumar</p>
-            </li>
-          </ul>
+        <div class="menu1 pt-2">
+          <!--<ul class=""> 
+      <li class="nav-item mr-4">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Adarsh Kumar
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#"><i class="fas fa-user-circle px-2"></i>My Profile</a>
+            </div>
+          </div>
+      </li>  
+    </ul>-->
         </div>
-        <div class="menulines" onclick="openNav()">&#9776;</div>
       </nav>
     </div>
     <!----------------------mmobile view---------------------------------------------------->
 
     <section style="margin-top: 80px">
-      <div class="container mt-4" style="background: white">
-        <div class="row">
+      <div class="container mt-4 c" style="background: white">
+        <div class="row" style="padding-top: 0 !important">
           <div class="col-lg-4 col-md-4 col-12 p-0">
-            <div>
+            <div class="p-4">
               <img
                 src="images/becomehotelimage.jpg"
                 style="height: 450px; width: 100%"
@@ -81,114 +113,60 @@
                 </select>
               </div>
               <div>
-                <div class="form-check form-check-inline mt-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="inlineCheckbox1"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox1"
-                    >Get updates on
-                    <span><i class="fab fa-whatsapp"></i></span>WhatsApp</label
-                  >
-                </div>
                 <h5 class="text-center mt-3">Property Type</h5>
                 <hr style="width: 20%; margin: auto" />
               </div>
-              <div class="my-4">
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a
-                      class="nav-item nav-link active"
-                      id="nav-home-tab"
-                      data-toggle="tab"
-                      href="#nav-home"
-                      role="tab"
-                      aria-controls="nav-home"
-                      aria-selected="true"
-                      >Residential</a
-                    >
-                    <a
-                      class="nav-item nav-link"
-                      id="nav-profile-tab"
-                      data-toggle="tab"
-                      href="#nav-profile"
-                      role="tab"
-                      aria-controls="nav-profile"
-                      aria-selected="false"
-                      >Commercial</a
-                    >
-                  </div>
-                </nav>
-                <div class="tab-content text-center py-3" id="nav-tabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="nav-home"
-                    role="tabpanel"
-                    aria-labelledby="nav-home-tab"
-                  >
-                    <div>
-                      <h5><b>Select Property Ad Type</b></h5>
-                      <div>
-                        <div class="form-check form-check-inline">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name=""
-                            id="inlineRadio1"
-                            value="option1"
-                          />
-                          <label class="form-check-label" for="inlineRadio1"
-                            >Rent</label
-                          >
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name=""
-                            id="inlineRadio2"
-                            value="option2"
-                          />
-                          <label class="form-check-label" for="inlineRadio2"
-                            >PG/Hostel</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="nav-profile"
-                    role="tabpanel"
-                    aria-labelledby="nav-profile-tab"
-                  >
-                    <div>
-                      <h5><b>Select Property Ad Type</b></h5>
-                      <div>
-                        <div class="form-check form-check-inline">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name=""
-                            id="inlineRadio1"
-                            value="option1"
-                          />
-                          <label class="form-check-label" for="inlineRadio1"
-                            >Rent</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
+              <div>
+                <div class="my-4" style="text-align: center">
+                  <label for="vehicle1">Residential</label>
+                  <input
+                    type="checkbox"
+                    id="vehicle1"
+                    name="vehicle1"
+                    value="Bike"
+                  />
+                  &nbsp;&nbsp;
+                  <label for="vehicle1">Commercial</label>
+                  <input
+                    type="checkbox"
+                    id="vehicle1"
+                    name="vehicle1"
+                    value="Bike"
+                  />
                 </div>
-                <!---tab content end---->
+                <div>
+                  <p
+                    class="mt-0 mb-4 text-center"
+                    style="color: grey"
+                    for="vehicle1"
+                  >
+                    Become SheltOwn's Premimum Properties Partner Today.
+                    <input
+                      type="checkbox"
+                      id="vehicle1"
+                      name="vehicle1"
+                      value="Bike"
+                    />
+                  </p>
+
+                  <p
+                    class="mt-0 mb-4 text-center"
+                    style="color: grey"
+                    for="vehicle1"
+                  >
+                    Request to be listed as Sheltie's Shelter &nbsp;<i
+                      class="fa fa-check"
+                      aria-hidden="true"
+                    ></i>
+                  </p>
+                </div>
               </div>
+
               <!----tab div end--------->
               <div class="d-flex justify-content-center">
                 <a href="listingproperty.html" class="btn btn-info px-5"
-                  >Start Listing Property For Free</a
+                  >Continue</a
                 >
               </div>
             </div>
@@ -199,7 +177,7 @@
       <!-----container end-------->
       <div class="container mt-2" style="background: #444">
         <div
-          class="text-center"
+          class="text-center ft"
           style="padding: 10px; font-size: 18px; color: white"
         >
           <span><i class="fa fa-phone-alt mr-2"></i></span>Give a missed call to
