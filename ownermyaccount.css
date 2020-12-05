@@ -28,6 +28,25 @@ body {
 .nav-link {
   font-weight: bold !important;
 }
+.blink {
+  width: 50px;
+  height: 20px;
+  background: red;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  margin-top: -12px !important;
+  margin-left: 50px;
+}
+.bl {
+  margin-left: 80px;
+}
+@media (max-width: 992px) {
+  .blink {
+    margin-top: 15px !important;
+  }
+}
 .menu ul {
   display: flex;
   list-style: none;
@@ -188,7 +207,7 @@ body {
 }
 .box .list {
   opacity: 0.7;
-  font-size: 20px;
+  font-size: 16px !important;
 }
 
 .fa-credit-card,
@@ -208,33 +227,17 @@ body {
 .fa-tachometer-alt,
 .fa-sign-out-alt,
 .fa-list,
-.fa-check {
+.fa-life-ring,
+.fa-clock {
   color: #2ecab6;
   margin-right: 15px;
 }
-
 .fa-handshake,
-.fa-hand-holding-heart,
-.fa-parking,
-.fa-car-battery,
-.fa-person-booth,
-.fa-trash-alt,
-.fa-check-circle,
-.fa-tree,
-.fa-burn,
-.fa-store,
-.fa-check-circle,
-.fa-fire-extinguisher,
-.fa-slideshare,
-.fa-swimming-pool,
-.fa-intercom,
-.fa-glass-cheers,
-.fa-snowflake,
-.fa-wifi,
-.fa-arrows-alt-v {
+.fa-hand-holding-heart {
   color: #2ecab6;
 }
-.fa-whatsapp {
+.fa-whatsapp,
+.fa-pencil-alt {
   color: green;
   margin: 0 5px;
 }
@@ -323,10 +326,15 @@ input[type="email"] {
 .yellowText {
   background-color: yellow;
 }
-/*----------------------------check box-----------------*/
+
+/*---------rental --------*/
 #myCheck:checked + #area {
   display: inline !important;
-  margin-left: 10px;
+  margin-left: 2px;
+}
+
+#area {
+  font-size: 14px;
 }
 
 /*--------------------------------right side end------------------------------------------------*/

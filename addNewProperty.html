@@ -25,8 +25,61 @@
       href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css"
       rel="stylesheet"
     />
-    <link href="ownermyaccount.css" rel="stylesheet" />
+    <!--<link href="ownermyaccount.css" rel="stylesheet"> -->
     <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "ITC Officina Sans Std Book";
+      }
+
+      body {
+        background: #f1f3f6;
+      }
+
+      .navbar-brand {
+        font-size: 20px;
+        margin-top: 5px !important;
+        margin-bottom: -10px !important;
+      }
+
+      .navbar-brand p {
+        font-size: 14px;
+        margin-top: -10px;
+      }
+
+      .nav-item a,
+      .navbar-brand {
+        color: #2ecab6 !important;
+      }
+
+      .nav-link {
+        font-weight: bold !important;
+      }
+
+      .blink {
+        width: 50px;
+        height: 20px;
+        background: red;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        margin-top: -12px !important;
+        margin-left: 50px;
+      }
+
+      .bl {
+        margin-left: 80px;
+      }
+
+      @media (max-width: 992px) {
+        .blink {
+          margin-top: 15px !important;
+        }
+      }
+
       @media (max-width: 576px) {
         .ft {
           font-size: 16px;
@@ -36,7 +89,8 @@
           height: 250px !important;
         }
 
-        .fa-user-circle {
+        .fa-user-circle,
+        .fa-check {
           color: #2ecab6 !important;
         }
 
@@ -50,45 +104,66 @@
 
   <body>
     <div class="header">
-      <nav class="navbar navbar-light fixed-top" style="background-color: #fff">
-        <div>
-          <a
-            class="pl-0 mr-2"
-            href="index.html"
-            style="padding-top: -10px !important"
-            ><i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i
-          ></a>
-          <a class="navbar-brand pl-0 py-0" href="#"
-            ><b>SHELTOWN.in</b>
-            <p>Live Like You Own It</p>
-          </a>
-        </div>
-        <div class="menu1 pt-2">
-          <!--<ul class=""> 
-      <li class="nav-item mr-4">
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Adarsh Kumar
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#"><i class="fas fa-user-circle px-2"></i>My Profile</a>
-            </div>
-          </div>
-      </li>  
-    </ul>-->
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top"
+        style="background-color: #fff"
+      >
+        <a class="navbar-brand pl-4 py-0" href="#"
+          ><b>SHELTOWN.in</b>
+          <p>Live Like You Own It</p>
+        </a>
+        <div class="navbar-brand py-0" style="font-size: 16px"></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-4">
+              <div class="blink" id="blink">Hurry</div>
+              <a class="nav-link" href="#" style="padding-top: 0px"
+                >Refer & Earn
+              </a>
+            </li>
+            <li class="nav-item mr-4">
+              <div class="blink bl" id="blinks">Free</div>
+              <a class="nav-link" href="#" style="padding-top: 0px"
+                >List Your Property</a
+              >
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#SignupModal" data-toggle="modal"
+                >Sign up
+              </a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#LoginModal" data-toggle="modal"
+                >Sign in
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
+    <!--header end---------->
     <!----------------------mmobile view---------------------------------------------------->
 
     <section style="margin-top: 80px">
       <div class="container mt-4 c" style="background: white">
         <div class="row" style="padding-top: 0 !important">
           <div class="col-lg-4 col-md-4 col-12 p-0">
-            <div class="p-4">
+            <div class="p-lg-0 p-md-0 p-sm-0 p-4">
               <img
                 src="images/becomehotelimage.jpg"
-                style="height: 450px; width: 100%"
+                style="height: 410px; width: 100%"
               />
             </div>
           </div>
@@ -116,10 +191,9 @@
                 <h5 class="text-center mt-3">Property Type</h5>
                 <hr style="width: 20%; margin: auto" />
               </div>
-
               <div>
-                <div class="my-4" style="text-align: center">
-                  <label for="vehicle1">Residential</label>
+                <div class="my-4" style="text-align: center; font-size: 18px">
+                  <label for="vehicle1">Residential Rent</label>
                   <input
                     type="checkbox"
                     id="vehicle1"
@@ -127,7 +201,7 @@
                     value="Bike"
                   />
                   &nbsp;&nbsp;
-                  <label for="vehicle1">Commercial</label>
+                  <label for="vehicle1">Commercial Rent</label>
                   <input
                     type="checkbox"
                     id="vehicle1"
@@ -135,13 +209,15 @@
                     value="Bike"
                   />
                 </div>
-                <div>
-                  <p
-                    class="mt-0 mb-4 text-center"
-                    style="color: grey"
-                    for="vehicle1"
-                  >
+                <div style="color: limegreen">
+                  <p class="mt-0 mb-0 text-center" style="" for="vehicle1">
                     Become SheltOwn's Premimum Properties Partner Today.
+                  </p>
+                  <p class="mt-0 mb-4 text-center" style="" for="vehicle1">
+                    Request to be listed as Sheltie's Shelter &nbsp;<i
+                      class="fa fa-check"
+                      aria-hidden="true"
+                    ></i>
                     <input
                       type="checkbox"
                       id="vehicle1"
@@ -149,21 +225,8 @@
                       value="Bike"
                     />
                   </p>
-
-                  <p
-                    class="mt-0 mb-4 text-center"
-                    style="color: grey"
-                    for="vehicle1"
-                  >
-                    Request to be listed as Sheltie's Shelter &nbsp;<i
-                      class="fa fa-check"
-                      aria-hidden="true"
-                    ></i>
-                  </p>
                 </div>
               </div>
-
-              <!----tab div end--------->
               <div class="d-flex justify-content-center">
                 <a href="listingproperty.html" class="btn btn-info px-5"
                   >Continue</a
@@ -187,7 +250,20 @@
       </div>
     </section>
     <!---------------------------------mobile view end-------------------------- -->
-
+    <script>
+      setInterval(function () {
+        document.querySelector("#blink").style = "visibility:hidden";
+      }, 1000);
+      setInterval(function () {
+        document.querySelector("#blink").style = "visibility:visible";
+      }, 1100);
+      setInterval(function () {
+        document.querySelector("#blinks").style = "visibility:hidden";
+      }, 1000);
+      setInterval(function () {
+        document.querySelector("#blinks").style = "visibility:visible";
+      }, 1100);
+    </script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
